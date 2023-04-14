@@ -23,7 +23,7 @@ public static class Program
             foreach (var item in ints)
                 hyperLogLog.Add(item);
 
-            var est = hyperLogLog.EstimateCount();
+            var est = hyperLogLog.EstimateCount(); 
 
             var err = (Math.Abs(est - uniqueNum) / uniqueNum) * 100;
 
